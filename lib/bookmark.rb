@@ -6,4 +6,4 @@ class Bookmark
     bookmarks = connection.exec('SELECT * FROM bookmarks;')
     bookmarks.map { |bookmark| bookmark["url"] }
   end
-end
+end 
