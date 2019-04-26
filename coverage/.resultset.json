@@ -1,6 +1,16 @@
 {
   "RSpec": {
     "coverage": {
+      "/Users/Yadira/bookmark/spec/setup_test_database.rb": [
+        1,
+        null,
+        1,
+        null,
+        5,
+        5,
+        null,
+        null
+      ],
       "/Users/Yadira/bookmark/spec/bookmark_spec.rb": [
         1,
         null,
@@ -19,6 +29,29 @@
         1,
         1,
         null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/Yadira/bookmark/spec/features/add_bookmarks_spec.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
         null,
         null
       ],
@@ -51,6 +84,6 @@
         null
       ]
     },
-    "timestamp": 1556206948
+    "timestamp": 1556290931
   }
 }

@@ -1,5 +1,5 @@
 # ENV['RACK_ENV'] = 'test'
-ENV['ENVIRONMENT'] = 'test'
+
 
 # Bring in the contents of the `app.rb` file
 require File.join(File.dirname(__FILE__), '..', 'app.rb')
@@ -10,7 +10,7 @@ require 'capybara/rspec'
 require 'rspec'
 require 'simplecov'
 require 'simplecov-console'
-require_relative './setup_test_database'
+
 SimpleCov.formatter = SimpleCov::Formatter::Console
 SimpleCov.start
 
@@ -32,6 +32,10 @@ Capybara.app = BookmarkManager
 # it.
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
+require_relative './setup_test_database'
+
+ENV['ENVIRONMENT'] = 'test'
+
 RSpec.configure do |config|
   config.before(:each) do
     setup_test_database
